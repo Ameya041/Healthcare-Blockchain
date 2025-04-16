@@ -34,7 +34,6 @@ contract HealthcareRecords {
     function getOwner() public view returns (address) {
         return owner;
     }
-
     function authorizeProvider(address provider) public onlyOwner {
         authorizedProviders[provider] = true;
 
